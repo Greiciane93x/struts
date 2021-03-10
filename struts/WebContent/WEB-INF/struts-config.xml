@@ -1,0 +1,50 @@
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+        <form-beans>
+            <form-bean name="RemoveContatoForm" 
+                type="treinandostrutsform.RemoveContatoForm" />
+             <form-bean name="ContatoForm" type="treinandostrutsform.ContatoForm" />		
+				
+		</form-beans>
+
+        <action-mappings>
+            <action path="/teste" type="treinandostrutsaction.TesteSimplesAction">
+                <forward name="ok" path="/exemplo.jsp"/>
+            </action>
+            
+            <action path="/listaContatos" type="treinandostrutsaction.ListaContatosAction">
+            	<forward name="lista" path="/lista.jsp" /> 
+            	<forward name="vazia" path="/lista-vazia.jsp"/>
+            </action>
+            
+            <action path="/novoContato" name="ContatoForm" input="/novo.jsp"
+            type="treinandostruts.AdicionaContatoAction" 
+            scope="request" >
+            	<forward name="ok" path="/listaContatos.do" /> 
+            </action>
+            
+    		
+    		<action path="/removeContato" name="RemoveContatoForm"
+                        type="treinandostrutsaction.RemoveContatoAction">
+                        <forward name="ok" path="/listaContatos.do" />
+            </action>
+            
+            
+    		<action path="/MostraContatoAction" name="MostraContatoAction"
+                        type="treinandostrutsaction.MostraContatoAction">
+                        <forward name="ok" path="/mostraContato.jsp" />
+            </action>
+            
+                 
+    		<action path="/AlteraContatoAction" name="AlteraContatoAction"
+                        type="treinandostrutsaction.AlteraContatoAction">
+                        <forward name="ok" path="/listaContato.do" />
+            </action>
+        </action-mappings>
+        
+        <message-resources parameter="MessageResources" />
+        
+</struts-config>
