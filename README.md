@@ -8,4 +8,4 @@ redirecionamento com um apelido e caminho path; <br/>
 >>Quando fazemos mapping.findForward("ok"), o apelido ok devolve o action forward. <br/> 
 
 **web.xml** <br/> 
-Define aonde a requisição deve chegar. 
+>>Define aonde a requisição deve chegar. 
