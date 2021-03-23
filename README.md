@@ -14,8 +14,12 @@ redirecionamento com um apelido e caminho path; <br/>
 >>É onde conseguimos definir os campos obrigatórios, no nível de layout de campo e página,<br/> 
 >>mas pode haver cenários complexos em que a regra de negócios precisa de vários <br/> 
 >>campos para verificar a qualidade dos dados. <br/> 
->**formula**: avalida a regra de negócio. Se for avaliada como true, um erro de validação<br/> 
-> gerado, caso contrário, é considerado sucesso de validação. <br/>
->**error message**: mensagem de erro a ser exibida na falha de validação <br/>
->**location**: permite que o administrador / desenvolvedor defina a localização <br/> 
->para exibir o erro de validação. 
+>>**formula**: avalida a regra de negócio. Se for avaliada como true, um erro de validação<br/> 
+>>gerado, caso contrário, é considerado sucesso de validação. <br/>
+>>**error message**: mensagem de erro a ser exibida na falha de validação <br/>
+>>**location**: permite que o administrador / desenvolvedor defina a localização <br/> 
+>>para exibir o erro de validação. <br/> 
+
+**struts-bean** <br/> 
+>> A utilização do form-bean nos a auxilia na eliminação de implementação de classes <br/> 
+>> que representem formulários web, e obtemos o seu conteúdo para manipulação na camada <br/>  controller e view da nossa aplicaço web. 
