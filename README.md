@@ -9,3 +9,13 @@ redirecionamento com um apelido e caminho path; <br/>
 
 **web.xml** <br/> 
 >>Define aonde a requisição deve chegar. 
+
+**validation-rules.xml** <br/> 
+>>É onde conseguimos definir os campos obrigatórios, no nível de layout de campo e página,
+>>mas pode haver cenários complexos em que a regra de negócios precisa de vários 
+>>campos para verificar a qualidade dos dados. 
+>**formula**: avalida a regra de negócio. Se for avaliada como true, um erro de validação<br/> 
+> gerado, caso contrário, é considerado sucesso de validação. 
+>**error message**: mensagem de erro a ser exibida na falha de validação 
+>**location**: permite que o administrador / desenvolvedor defina a localização <br/> 
+>para exibir o erro de validação. 
